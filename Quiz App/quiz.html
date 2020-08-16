@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="showQuestion()" style="background-color: #04046e;" >
+    <p class="" id="sc"></p>
+
+    <div class="con" id="con">
+        <!-- <img src="images/quiz image.jpg" class=".img-fluid" alt="Responsive image"> -->
+       
+        <div class="centered">
+            <h1 class="Question" id="Question" >Welcome</h1><br>
+
+            
+        </div>
+        <div class="options">
+            
+            
+            <div class="option" onclick="Selected(this)">option 1</div>
+            <div class="option" onclick="Selected(this)">option 2</div>
+        </div>
+        
+        <div class="options">
+            <div class="option" onclick="Selected(this)">option 3</div>
+            <div class="option" onclick="Selected(this)">option 4</div>
+        </div>
+
+    <div class="btn_quiz">
+        <button class="btn_previous none" onclick="showPrevious()"> << Previous</button>
+        <!-- <button class="btn_Submit none" onclick="window.location.href='Score.html'">Submit</button> -->
+        <!-- <form action="Score.html"> -->
+        <button class="btn_Submit none" onclick="Submit(); ">Submit</button>
+    <!-- </form> -->
+    <button class="btn_Next" onclick="showNext()">Next >> </button>
+    </div>    
+    </div>
+    <div class="MainScore off" id="MainScore">
+        <div class="score">
+        <h3 id="result">Your Score is</h3>
+    </div>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>
